@@ -22,5 +22,9 @@ public class MenuExample {
 		
 		frame.setJMenuBar(menubar);
 		frame.setVisible(true);
-  }
+  
+		JMenuItem item = new JMenuItem("Close");
+			item.addActionListener(new MenuActionListener());
+			fileMenu.add(item);
+	}
 }
